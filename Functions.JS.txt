@@ -1,0 +1,16 @@
+function firstCharacterFilter(elements, character){
+  var bNames = "";
+
+  for (var i = 0; i < elements.length; i += 1){
+    if (elements[i][0] === character){
+      bNames = elements[i] + " " + bNames;
+    }
+}
+  
+  return bNames.trim();
+}
+
+var names = ["Ben","Bob","John","Paul","Berny"];
+
+console.log(firstCharacterFilter(names,"B"));
+console.log(firstCharacterFilter(names,"J"));
